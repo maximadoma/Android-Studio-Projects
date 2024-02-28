@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Mercato</string>
+    <string name="user_profile">User Profile</string>
+    <string name="user_name">Fernyl Jean!</string>
+    <string name="email">fernylmaningo@gmail.com</string>
+    <string name="contact">+639 978 6121</string>
+    <string name="categories">Categories</string>
+    <string name="cat_toys">Cat Toys</string>
+    <string name="cat_shampoo">Cat Shampoo</string>
+    <string name="accessories">Accessories</string>
+    <string name="pet_care">Pet Care</string>
+    <string name="cat_food">Cat Food</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="text_dsc">Have you ever wondered why cats are so cute? With their soft fur, playful personalities, and adorable expressions, it’s no wonder that these furry creatures hold a special place in our hearts. </string>
+    <string name="_9_45dollars">$ 9.45</string>
+    <string name="friskies">Purina Friskies Pate Poultry Patter | Chicken Flavor</string>
+    <string name="classic">Kit Cat Classic Cuisine Chicken Craving | Chicken Flavor</string>
+    <string name="whiskas">Whiskas Dry Cat Food (+1 year) Fish Mackerel flavor</string>
+    <string name="meowmix">Meow Mix Original Choice (Grain Free) | Multiple Flavors</string>
+    <string name="applaws">Natural Cat Food - Applaws Limited Ingredient Recipe Grain and Potato Free</string>
+    <string name="purina_one">Purina ONE Microbiome Balance Salmon and Rice Formula Dry Cat Food</string>
+    <string name="pet_brush1">Pet Hair Comb | Cat Brush for Shedding, Grooming Pet, Self Care Brush</string>
+    <string name="pet_brush2">AMUCA | Cat Brush for Shedding, Self-Cleaning Slicker Brush</string>
+    <string name="pet_brush3">Cat Brush for Shedding, Slicker Brush for Indoor Cats</string>
+    <string name="pet_brush4">Magic Pet Comb, Cat Grooming Brush for Short and Long Fur Cats</string>
+    <string name="view_more">View More</string>
+
+    <string name="description">
+        Classic Cat Food is 100% nutritionally balanced and complete natural cat food, suitable from kittens to older cats. Made in the UK with natural ingredients, we draw upon three generations of British farming heritage and pet care expertise to ensure your cat enjoys a healthy and hearty meal.
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description_1">Purina Friskies boasts over 100 different cat food options of yummy wet and dry foods, treats, and cat food complements. Friskies cat food is carefully formulated with a blend of nutritious ingredients to cater to every cat breed\'s diet needs and support overall pet health.</string>
+    <string name="description2">Applaws Natural Cat Food is carefully made with premium ingredients to ensure your pet is as healthy and happy as they can be.</string>
+    <string name="description_3">If you own a cat, you may wonder what the best dry cat food is so you can make sure she’s getting the nutrition she needs. Our natural, highly digestible formulas* have real meat as the #1 ingredient and added vitamins, minerals and nutrients to help support your cat’s whole body health.</string>
+
+
+</resources>
