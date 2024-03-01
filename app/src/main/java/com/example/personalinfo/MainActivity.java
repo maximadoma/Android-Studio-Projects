@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity{
 
 
 
+
         binding.bottomNavView.setOnItemSelectedListener(item -> {
 
             int itemId = item.getItemId();
