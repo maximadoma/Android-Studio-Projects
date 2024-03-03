@@ -22,18 +22,15 @@
         <activity
             android:name=".show_card3"
             android:exported="false" />
-
         <activity
             android:name=".show_card2"
             android:exported="false" />
-
         <activity
             android:name=".show_card1"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false"
-            android:label="@string/title_activity_main" />
+            android:name=".Drawer_Navigation"
+            android:exported="false" />
         <activity
             android:name=".splash_screen"
             android:exported="true">
