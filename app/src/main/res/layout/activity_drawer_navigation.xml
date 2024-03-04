@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
-    android:fitsSystemWindows="true"
     tools:openDrawer="start"
     tools:context=".Drawer_Navigation">
 
@@ -17,11 +16,11 @@
 
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="50dp"
             android:id="@+id/toolbar"
             android:elevation="4dp"
             android:background="@color/bar"
-            style="@style/ThemeOverlay.AppCompat.ActionBar"
+
 
             />
 
@@ -63,7 +62,10 @@
         app:headerLayout="@layout/navdraw_header"
         app:menu="@menu/nav_drawer"
         android:backgroundTint="@color/white"
-        app:itemIconTint="@color/bar"/>
+        app:itemIconTint="@color/bar"
+        app:itemTextColor="@color/black"
+        android:theme="@style/Base.Theme.PersonalInfo"
+        />
 
 
 

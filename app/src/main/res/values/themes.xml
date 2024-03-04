@@ -4,7 +4,10 @@
         <!-- Customize your light theme here. -->
          <item name="colorPrimaryDark">@color/bar</item>
          <item name="android:windowBackground">@color/white</item>
+        <item name="colorControlHighlight">#FB8C00</item>
     </style>
 
-    <style name="Theme.PersonalInfo" parent="Base.Theme.PersonalInfo" />
+    <style name="Theme.PersonalInfo" parent="Base.Theme.PersonalInfo" >
+        <item name="colorControlHighlight">#FB8C00</item>
+    </style>
 </resources>

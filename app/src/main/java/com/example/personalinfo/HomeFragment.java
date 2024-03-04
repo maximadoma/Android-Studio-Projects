@@ -115,10 +115,6 @@ public class HomeFragment extends Fragment {
         });
 
 
-
-
-
-
         //go to the next activity
         viewMore.setOnClickListener(new OnClickListener() {
             @Override

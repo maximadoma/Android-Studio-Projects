@@ -13,17 +13,17 @@
 
         <item
             android:id="@+id/draw_nav_account"
-            android:icon="@drawable/home"
+            android:icon="@drawable/account_icon"
             android:title="@string/my_account"/>
 
         <item
             android:id="@+id/draw_nav_settings"
-            android:icon="@drawable/home"
+            android:icon="@drawable/settings"
             android:title="@string/_settings"/>
 
         <item
             android:id="@+id/draw_nav_feedback"
-            android:icon="@drawable/home"
+            android:icon="@drawable/feedback_icon"
             android:title="@string/feedback"/>
 
     </group>
@@ -33,8 +33,8 @@
         <menu>
             <item
                 android:id="@+id/draw_nav_logout"
-                android:icon="@drawable/home"
-                android:title="@string/feedback"/>
+                android:icon="@drawable/logout_icon"
+                android:title="Logout"/>
         </menu>
 
     </item>
