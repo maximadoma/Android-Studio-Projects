@@ -45,6 +45,7 @@
                 tools:layout_editor_absoluteX="39dp"
                 android:background="#FFFFFF"
                 app:itemTextColor="@color/bar"
+                android:fontFamily="@font/tomysoft_medium"
                 app:menu="@menu/nav_menu"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -62,9 +63,9 @@
         app:headerLayout="@layout/navdraw_header"
         app:menu="@menu/nav_drawer"
         android:backgroundTint="@color/white"
-        app:itemIconTint="@color/bar"
-        app:itemTextColor="@color/black"
-        android:theme="@style/Base.Theme.PersonalInfo"
+        app:itemIconTint="@color/icon_text_changer"
+        app:itemTextColor="@color/icon_text_changer"
+        app:itemShapeFillColor="@color/drawer_item_selected"
         />
 
 
