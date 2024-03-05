@@ -48,8 +48,9 @@ public class Drawer_Navigation extends AppCompatActivity implements NavigationVi
         }
 
         //Initializing the Bottom Navigation View
-
         bottomNavigationView = findViewById(R.id.bottom_nav_view);
+
+        //Method for opening the bottom navigation view
          bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
              @Override
              public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -59,16 +60,14 @@ public class Drawer_Navigation extends AppCompatActivity implements NavigationVi
                         replaceFragment(new ExploreFragment());
                     } else if (itemId == R.id.likes_navigation) {
                         replaceFragment(new LikesFragment());
-                    } else if (itemId == R.id.orders_navigation) {
-                        replaceFragment(new OrdersFragment());
+                    } else if (itemId == R.id.shop_navigation) {
+                        replaceFragment(new ShopNowFragment());
                     }
                     return true;
              }
          });
 
     }
-
-
 
 
 

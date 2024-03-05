@@ -40,8 +40,7 @@
     <string name="description_1">Purina Friskies boasts over 100 different cat food options of yummy wet and dry foods, treats, and cat food complements. Friskies cat food is carefully formulated with a blend of nutritious ingredients to cater to every cat breed\'s diet needs and support overall pet health.</string>
     <string name="description2">Applaws Natural Cat Food is carefully made with premium ingredients to ensure your pet is as healthy and happy as they can be.</string>
     <string name="description_3">If you own a cat, you may wonder what the best dry cat food is so you can make sure she’s getting the nutrition she needs. Our natural, highly digestible formulas* have real meat as the #1 ingredient and added vitamins, minerals and nutrients to help support your cat’s whole body health.</string>
-    <string name="likes">Likes</string>
-    <string name="my_orders">Orders</string>
+    <string name="likes">My Likes</string>
     <string name="dashboard">Dashboard</string>
     <string name="my_account">My Account</string>
     <string name="_settings">Settings</string>
@@ -50,7 +49,11 @@
     <string name="profile_name">Fernyl Jean Maningo</string>
     <string name="open">open</string>
     <string name="close">close</string>
-
+    <string name="product_details">Product Details</string>
+    <string name="rating">(4.8 / 5)</string>
+    <string name="sold">1.9 K Sold</string>
+    <string name="description_4">Now, you can promote gut health and immune support with Purina ONE with Microbiome Balance. Natural prebiotic fiber goes to work inside the cat microbiome, balancing the bacteria in her gut to help keep her healthy and happy. Purina ONE dry cat food is natural, with added vitamins, minerals and nutrients. Try veterinarian recommended Purina ONE today!</string>
+    <string name="shop_now">Shop Now</string>
 
 
 </resources>

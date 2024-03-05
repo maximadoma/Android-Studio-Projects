@@ -7,13 +7,15 @@
         />
 
     <item
+        android:title="@string/shop_now"
+        android:icon="@drawable/order_icon"
+        android:id="@+id/shop_navigation"/>
+
+    <item
         android:title="@string/likes"
         android:icon="@drawable/like_icon"
         android:id="@+id/likes_navigation"/>
 
-    <item
-        android:title="@string/my_orders"
-        android:icon="@drawable/order_icon"
-        android:id="@+id/orders_navigation"/>
+
 
 </menu>
