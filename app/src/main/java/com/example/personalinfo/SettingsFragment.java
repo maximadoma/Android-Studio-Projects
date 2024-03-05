@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -58,7 +60,25 @@ public class SettingsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        String default_settings[] = {
+                "Chat Settings",
+                "Push Notifications",
+                "Privacy Settings",
+                "Language (US)",
+                "Help Center",
+                "Community Rules",
+                "Mercato Policies",
+                "About Us"
+        };
+
+
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_settings, container, false);
+        View view =  inflater.inflate(R.layout.fragment_settings, container, false);
+        ListView settingsList = (ListView) view.findViewById(R.id.default_set);
+        settingsList.setAdapter(new ArrayAdapter<String>(getActivity(), R.layout.text_color_list, R.id.text_data, default_settings));
+
+        return view;
     }
 }

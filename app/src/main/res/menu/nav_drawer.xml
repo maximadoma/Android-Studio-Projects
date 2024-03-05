@@ -21,12 +21,12 @@
             android:icon="@drawable/settings"
             android:title="@string/_settings"/>
 
-        <item
-            android:id="@+id/draw_nav_feedback"
-            android:icon="@drawable/feedback_icon"
-            android:title="@string/feedback"/>
-
     </group>
+
+    <item
+        android:id="@+id/draw_nav_feedback"
+        android:icon="@drawable/feedback_icon"
+        android:title="@string/feedback"/>
 
     <item
         android:title="">

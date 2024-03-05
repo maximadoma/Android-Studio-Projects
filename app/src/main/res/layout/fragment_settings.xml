@@ -5,10 +5,41 @@
     android:layout_height="match_parent"
     tools:context=".SettingsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_margin="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/tomysoft_medium"
+            android:text="Settings"
+            android:textSize="30sp"
+            android:ellipsize="end"
+            android:drawableStart="@drawable/settings"
+            android:drawablePadding="20dp"
+            android:maxLines="2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/default_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="#E3E3E3"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
 
 </FrameLayout>

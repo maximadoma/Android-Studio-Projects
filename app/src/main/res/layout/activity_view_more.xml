@@ -6,21 +6,404 @@
     android:layout_height="match_parent"
     tools:context=".view_more">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         >
+
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="View More Activity"
-            android:layout_gravity="center"
-            android:textColor="@color/white"
-            android:textAlignment="center"
-            android:background="@color/mercato_logo_background"/>
+            android:layout_height="276dp"
+            android:background="@drawable/cat_banner"
+            android:fontFamily="@font/tomysoft_medium"
+            android:padding="20dp"
+            android:text="@string/welcome_msg"
+            android:textColor="#988AB5"
+            android:textSize="40sp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="-30dp"
+            android:layout_marginBottom="-20dp"
+            android:backgroundTint="#F4F4F4"
+            app:cardCornerRadius="20dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:layout_margin="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/tomysoft_medium"
+                        android:text="Featured Cat Foods"
+                        android:textColor="@color/black"
+                        android:padding="20dp"
+                        android:textSize="18sp"
+                        android:drawableEnd="@drawable/search_purple"/>
+
+
+                    <GridLayout
+                        android:id="@+id/grid_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:columnCount="2"
+                        android:rowCount="5"
+                        android:useDefaultMargins="true"
+                        android:orientation="horizontal"
+                        >
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/classic_catfood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FFFFFF"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                >
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="160dp"
+                                    android:src="@drawable/classic_catfood"
+                                    android:layout_margin="10dp"
+                                    android:layout_gravity="center"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="33dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:textColor="@color/black"
+                                    android:text="@string/classic"
+                                    android:textSize="12sp"
+                                    android:ellipsize="end"
+                                    android:maxLines="2"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:text="@string/_9_45dollars"
+                                    android:textColor="#3B0AAC"
+                                    android:layout_margin="8dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/friskies_catfood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FFFFFF"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                >
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="160dp"
+                                    android:src="@drawable/friskies_catfood"
+                                    android:layout_margin="10dp"
+                                    android:layout_gravity="center"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="33dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:textColor="@color/black"
+                                    android:text="@string/friskies"
+                                    android:textSize="12sp"
+                                    android:ellipsize="end"
+                                    android:maxLines="2"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:text="@string/_9_45dollars"
+                                    android:textColor="#3B0AAC"
+                                    android:layout_margin="8dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/applaws_catfood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FFFFFF"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                >
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="160dp"
+                                    android:src="@drawable/applaws_catfood"
+                                    android:layout_margin="10dp"
+                                    android:layout_gravity="center"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="33dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:textColor="@color/black"
+                                    android:text="@string/applaws"
+                                    android:textSize="12sp"
+                                    android:ellipsize="end"
+                                    android:maxLines="2"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:text="@string/_9_45dollars"
+                                    android:textColor="#3B0AAC"
+                                    android:layout_margin="8dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/purina_catfood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FFFFFF"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                >
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="160dp"
+                                    android:src="@drawable/one_catfood"
+                                    android:layout_margin="10dp"
+                                    android:layout_gravity="center"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="33dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:textColor="@color/black"
+                                    android:text="@string/purina_one"
+                                    android:textSize="12sp"
+                                    android:ellipsize="end"
+                                    android:maxLines="2"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:text="@string/_9_45dollars"
+                                    android:textColor="#3B0AAC"
+                                    android:layout_margin="8dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FFFFFF"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                >
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="160dp"
+                                    android:src="@drawable/meowmix_catfood"
+                                    android:layout_margin="10dp"
+                                    android:layout_gravity="center"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="33dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:textColor="@color/black"
+                                    android:text="@string/meowmix"
+                                    android:textSize="12sp"
+                                    android:ellipsize="end"
+                                    android:maxLines="2"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:text="@string/_9_45dollars"
+                                    android:textColor="#3B0AAC"
+                                    android:layout_margin="8dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FFFFFF"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="0dp"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+                                >
+
+                                <ImageView
+                                    android:layout_width="150dp"
+                                    android:layout_height="160dp"
+                                    android:src="@drawable/whiskas_catfood"
+                                    android:layout_margin="10dp"
+                                    android:layout_gravity="center"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="33dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="8dp"
+                                    android:textColor="@color/black"
+                                    android:text="@string/whiskas"
+                                    android:textSize="12sp"
+                                    android:ellipsize="end"
+                                    android:maxLines="2"/>
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:text="@string/_9_45dollars"
+                                    android:textColor="#3B0AAC"
+                                    android:layout_margin="8dp"
+                                    android:layout_gravity="center"/>
+
+                            </LinearLayout>
+
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </GridLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+            </ScrollView>
+
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
     </LinearLayout>
+
+
+
 
 
 </LinearLayout>
