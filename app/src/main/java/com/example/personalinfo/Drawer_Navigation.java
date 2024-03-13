@@ -9,42 +9,41 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.navigation.NavigationView;
 
 public class Drawer_Navigation extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener  {
     private DrawerLayout drawerLayout;
+    private NavigationView navigationView;
     private BottomNavigationView bottomNavigationView;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drawer_navigation);
 
-        //Toolbar
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        //Initializing the Toolbar
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-
+        //Initializing the Drawer Layout
         drawerLayout = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
         //Initializing the Side Drawer Navigation View
-        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
         if (savedInstanceState == null){
@@ -54,7 +53,6 @@ public class Drawer_Navigation extends AppCompatActivity implements NavigationVi
 
         //Initializing the Bottom Navigation View
         bottomNavigationView = findViewById(R.id.bottom_nav_view);
-
         //Method for opening the bottom navigation view
          bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
              @Override
@@ -100,6 +98,7 @@ public class Drawer_Navigation extends AppCompatActivity implements NavigationVi
         }
         else if (itemId == R.id.draw_nav_feedback) {
 
+            //Alert Dialog will be triggered when the "feedback" menu from side nav is pressed
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle("Provide us your feedback!");
 
@@ -135,19 +134,12 @@ public class Drawer_Navigation extends AppCompatActivity implements NavigationVi
 
         }
 
-
-
-
-
-
-
-
-
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
 
     private void sendDialogDataToActivity(String data) {
+        //Toast message displays at the bottom when the user submits their feedback
         Toast.makeText(this, "Feedback Submitted!", Toast.LENGTH_SHORT).show();
     }
 
@@ -158,10 +150,6 @@ public class Drawer_Navigation extends AppCompatActivity implements NavigationVi
         fragmentTransaction.replace(R.id.frame_layout, fragment);
         fragmentTransaction.commit();
     }
-
-
-
-
 
 
 }

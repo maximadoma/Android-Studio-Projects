@@ -16,6 +16,4 @@
         android:icon="@drawable/like_icon"
         android:id="@+id/likes_navigation"/>
 
-
-
 </menu>
