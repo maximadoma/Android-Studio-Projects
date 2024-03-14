@@ -46,7 +46,7 @@ public class show_card1 extends AppCompatActivity {
     }
 
     public void makeNotification(){
-        String channelID = "CHANNE_ID_NOTIFICATION";
+        String channelID = "CHANNEL_ID_NOTIFICATION";
         NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(),channelID);
         builder.setSmallIcon(R.drawable.notification_icon)
         .setContentTitle("Notification")
